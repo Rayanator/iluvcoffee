@@ -19,6 +19,7 @@ export class CoffeesController {
   @Get()
   findAll(@Query() paginationQuery) {
     //const { limit, offset } = paginationQuery;
+    console.log(paginationQuery);
     return this.coffeesService.findAll();
   }
   @Get(':id')
